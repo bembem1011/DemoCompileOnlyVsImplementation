@@ -1,0 +1,50 @@
+# Gradle
+.gradle/
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# Android
+*.apk
+*.aab
+*.ap_
+*.dex
+local.properties
+.navigation/
+captures/
+output.json
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Android Studio
+.externalNativeBuild/
+.cxx/
+
+# Kotlin
+*.kotlin_module
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Analysis results
+analysis/results/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# KMP
+shared/build/
+*/build/
+
+# Local configuration
+local.properties

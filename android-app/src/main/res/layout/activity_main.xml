@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/android-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CompileOnly vs Implementation Demo"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explore the differences between compileOnly and implementation dependency configurations in KMP projects."
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Demo Action Buttons -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_compare_build"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compare Build Characteristics"
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.Material3.Button" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_compare_runtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compare Runtime Performance"
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.Material3.Button" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_compare_development"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compare Development Experience"
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.Material3.Button" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_analyze_compatibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Analyze Backward Compatibility"
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.Material3.Button.Outlined" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_generate_recommendations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate Recommendations"
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.Material3.Button.Outlined" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_measure_apk_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Measure APK Size Impact"
+            android:layout_marginBottom="24dp"
+            style="@style/Widget.Material3.Button.Outlined" />
+
+        <!-- Results Display -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="16dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="400dp">
+
+                <TextView
+                    android:id="@+id/tv_results"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Welcome to the CompileOnly vs Implementation demo!\n\nClick the buttons above to explore different aspects of dependency configuration in KMP projects."
+                    android:textSize="14sp"
+                    android:fontFamily="monospace"
+                    android:textIsSelectable="true" />
+
+            </ScrollView>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Info Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Demo Information"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• This app demonstrates both compileOnly and implementation approaches\n• CompileOnly: core-api, resources-module\n• Implementation: core-impl, demo modules\n• Results show theoretical and measured differences\n• Use for architecture decision making"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For detailed analysis, check:\n• presentation/slides.md\n• analysis/detailed-analysis.md\n• Build logs and APK analyzer"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+</ScrollView>
