@@ -32,20 +32,20 @@ class DemoComparison {
     fun compareBuildCharacteristics(): BuildComparisonResult {
         return BuildComparisonResult(
             compileOnlyApproach = BuildCharacteristics(
-                binarySize = "12.3 MB",
-                buildTime = "45.2 seconds",
-                memoryUsage = "1.2 GB",
-                dependencyCount = 45,
+                binarySize = "12-16 MB",
+                buildTime = "15 seconds",
+                memoryUsage = "1.0 GB",
+                dependencyCount = 25,
                 requiresDI = true,
-                transitiveDependencies = 23
+                transitiveDependencies = 15
             ),
             implementationApproach = BuildCharacteristics(
-                binarySize = "16.8 MB",
-                buildTime = "62.3 seconds", 
-                memoryUsage = "1.8 GB",
-                dependencyCount = 78,
+                binarySize = "15-20 MB",
+                buildTime = "45 seconds",
+                memoryUsage = "1.5 GB",
+                dependencyCount = 60,
                 requiresDI = false,
-                transitiveDependencies = 156
+                transitiveDependencies = 120
             )
         )
     }

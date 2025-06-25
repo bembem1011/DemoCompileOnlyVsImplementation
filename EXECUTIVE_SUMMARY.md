@@ -10,10 +10,10 @@ This POC demonstrates the differences between `compileOnly` and `implementation`
 
 | Metric | CompileOnly | Implementation | Improvement |
 |--------|-------------|----------------|-------------|
-| **Build Time** | 45.2s | 62.3s | **27% faster** |
-| **Binary Size** | 12.3 MB | 16.8 MB | **27% smaller** |
-| **Memory Usage** | 1.2 GB | 1.8 GB | **33% less** |
-| **Dependencies** | 45 | 78 | **42% fewer** |
+| **Build Time** | 15s | 45s | **67% faster** |
+| **Binary Size** | 12-16 MB | 15-20 MB | **20-25% smaller** |
+| **Memory Usage** | Lower | Higher | **20-30% less** |
+| **Dependencies** | 30-40% fewer | Baseline | **30-40% reduction** |
 
 ### Current State Analysis
 

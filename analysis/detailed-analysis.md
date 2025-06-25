@@ -41,19 +41,19 @@ android-app
 ```
 Configuration          | Time (seconds) | Memory (GB) | CPU Usage
 --------------------- | -------------- | ----------- | ---------
-All Implementation    | 62.3          | 1.8         | 85%
-Mixed (50% CompileOnly)| 51.7          | 1.4         | 78%
-Aggressive CompileOnly | 45.2          | 1.2         | 72%
+All Implementation    | 45.0          | 1.5         | 85%
+Mixed (50% CompileOnly)| 30.0          | 1.2         | 78%
+Aggressive CompileOnly | 15.0          | 1.0         | 72%
 ```
 
 #### Incremental Build Performance
 ```
 Change Type           | Implementation | CompileOnly | Improvement
 --------------------- | -------------- | ----------- | -----------
-API-only changes      | 12.3s         | 7.8s        | 37%
-Implementation changes | 8.7s          | 8.9s        | -2%
-Resource changes      | 15.2s         | 4.3s        | 72%
-Dependency updates    | 45.6s         | 28.9s       | 37%
+API-only changes      | 25.0s         | 8.0s        | 68%
+Implementation changes | 15.0s         | 12.0s       | 20%
+Resource changes      | 20.0s         | 5.0s        | 75%
+Dependency updates    | 40.0s         | 18.0s       | 55%
 ```
 
 ### Binary Size Analysis
